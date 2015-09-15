@@ -3,7 +3,8 @@ package sudas.study.example.one;
 public class Inheritance01 {
 	public static void main(String[] args) {
 
-		
+		//First Change
+		Person P = new Person();
 	}
 }
 
@@ -16,6 +17,8 @@ class Person {
 		this.address = address;
 		System.out.println("Name: " + name + '\n' + "Address: " + address);
 	}
+	
+	
 }
 
 class Boy extends Person {
