@@ -1,0 +1,33 @@
+package example1;
+
+public class Inheritance02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+/*
+Simple inheritance example
+*/
+
+class Drinks
+{
+	String brand;
+	String name;
+	double waterContent;
+}
+
+class SoftDrink
+{
+	double co2Content;
+	
+}
+
+class HardDrink
+{
+	double ethanolContent;
+	
+}

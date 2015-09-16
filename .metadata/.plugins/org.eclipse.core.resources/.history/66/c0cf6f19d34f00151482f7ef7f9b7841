@@ -1,0 +1,22 @@
+package example1;
+
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
+
+public class CommpnIO_01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		File f = new File("C:\\Test");
+
+		FileUtils file = new FileUtils();
+		file.listFilesAndDirs("C:\\Test", fileFilter, dirFilter)
+		
+		
+		
+	}
+
+}
+

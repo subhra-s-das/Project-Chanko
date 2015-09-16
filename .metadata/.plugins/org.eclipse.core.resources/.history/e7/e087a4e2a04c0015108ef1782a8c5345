@@ -1,0 +1,9 @@
+package example1;
+
+public class Inheritance04 {
+	public static void main (String args[])
+	{
+		
+	}
+
+}

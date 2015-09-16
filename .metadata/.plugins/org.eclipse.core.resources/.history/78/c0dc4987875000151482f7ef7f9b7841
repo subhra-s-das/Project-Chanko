@@ -1,0 +1,45 @@
+package example1;
+
+import java.util.ArrayList;
+
+public class Iterator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class iteration {
+	public void iterations() {
+		// make a array list
+
+		ArrayList<String> arraylist1 = new ArrayList<String>();
+		ArrayList<Integer> arraylist2 = new ArrayList<Integer>();
+
+		arraylist1.add("A");
+		arraylist1.add("B");
+		arraylist1.add("C");
+		arraylist1.add("D");
+		arraylist1.add("E");
+		arraylist1.add("F");
+		arraylist1.add("G");
+		arraylist1.add("H");
+
+		arraylist2.add(200);
+		arraylist2.add(300);
+		arraylist2.add(400);
+		arraylist2.add(500);
+		arraylist2.add(600);
+
+		// get the elements of the array list for every INDEX
+		int i;
+		for (i = 0; i < arraylist1.size(); i++) {
+			arraylist1.get(i);
+
+		}
+
+	}
+
+}

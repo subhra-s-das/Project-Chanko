@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry including="**/*.java" kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/S_Das/Dropbox/externalJAR/activation.jar"/>
+	<classpathentry kind="lib" path="/Users/S_Das/Dropbox/externalJAR/arapi-90.jar"/>
+	<classpathentry kind="lib" path="/Users/S_Das/Dropbox/externalJAR/arjdbc-90.jar"/>
+	<classpathentry kind="lib" path="/Users/S_Das/Dropbox/externalJAR/axis-1.4.jar"/>
+	<classpathentry kind="lib" path="/Users/S_Das/Dropbox/externalJAR/axis.jar"/>
+	<classpathentry kind="lib" path="/Users/S_Das/Dropbox/externalJAR/commons-discovery.jar"/>
+	<classpathentry kind="lib" path="/Users/S_Das/Dropbox/externalJAR/commons-io-1.3.2.jar"/>
+	<classpathentry kind="lib" path="/Users/S_Das/Dropbox/externalJAR/commons-io-2.4-javadoc.jar"/>
+	<classpathentry kind="lib" path="/Users/S_Das/Dropbox/externalJAR/commons-io-2.4-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/S_Das/Dropbox/externalJAR/commons-io-2.4-test-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/S_Das/Dropbox/externalJAR/commons-io-2.4-tests.jar"/>
+	<classpathentry kind="lib" path="/Users/S_Das/Dropbox/externalJAR/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="/Users/S_Das/Dropbox/externalJAR/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="/Users/S_Das/Dropbox/externalJAR/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="/Users/S_Das/Dropbox/externalJAR/jaxrpc.jar"/>
+	<classpathentry kind="lib" path="/Users/S_Das/Dropbox/externalJAR/jaxws-api.jar"/>
+	<classpathentry kind="lib" path="/Users/S_Das/Dropbox/externalJAR/jaxws-rt.jar"/>
+	<classpathentry kind="lib" path="/Users/S_Das/Dropbox/externalJAR/jxl.jar"/>
+	<classpathentry kind="lib" path="/Users/S_Das/Dropbox/externalJAR/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="/Users/S_Das/Dropbox/externalJAR/web-services-7.1.jar"/>
+	<classpathentry kind="lib" path="/Users/S_Das/Dropbox/externalJAR/wsdl4j-1.6.3.jar"/>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

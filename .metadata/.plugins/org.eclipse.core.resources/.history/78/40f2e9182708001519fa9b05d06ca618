@@ -1,0 +1,84 @@
+package yf;
+
+import java.util.List;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.internal.FindsByXPath;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class AR_Login {
+
+	public static void main(String[] args) {
+
+		//sets the system property
+//		System.setProperty("webdriver.chrome.driver", "c:/Selenium/chromedriver.exe");
+//		ChromeDriver driver = new ChromeDriver();
+		FirefoxDriver driver = new FirefoxDriver();
+		//implicit wait
+	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
+		driver.get("http://vw-pun-atm-dv18:8080/arsys/shared/login.jsp?/arsys/home");
+		driver.findElement(By.id("username-id")).sendKeys("peter");;
+		driver.findElement(By.id("pwd-id")).clear();
+		driver.findElement(By.id("pwd-id")).sendKeys("bmcAdm1n");
+		driver.findElement(By.id("login")).click();
+		//driver.findElement(By.id("reg_img_304316340")).click();
+		
+//	explicit wait for application pane in AR Mid Tier.
+//		WebDriverWait wait = new WebDriverWait(driver, 30);
+//		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector("html body.yui-skin-sam div#FormApp.FormApp div#FormContainer div#WIN_0_80097.Panel fieldset.pnl div#WIN_0_80161.Panel fieldset.pnl a#WIN_0_304316350.btnflt div.btnimgdiv img#reg_img_304316350.btnimg")));
+		driver.findElement(By.id("reg_img_304316340")).click();
+		System.out.println(driver.getTitle());
+		
+// window handle
+	String Handle1 = driver.getWindowHandle();  // Get current windows handle
+	System.out.println("Windows handle of Mid-Tier window " +Handle1);
+	
+	driver.findElement(By.xpath("//*[@id='FormContainer']/div[5]/div/div[22]/a")).click();	
+	driver.findElement(By.xpath("//*[@id='FormContainer']/div[5]/div/div[22]/div/div/a")).click();
+	
+	Set <String> Handle2 = driver.getWindowHandles();
+	System.out.println("Windows handle of mid-tier and reporting window " +Handle2);
+		
+	for (String Handle3 : driver.getWindowHandles())
+	{
+		driver.switchTo().window(Handle3); // switched to new window
+		
+	}
+	
+	driver.findElement(By.xpath("//*[@id='MIBrowseAnchor']/a")).click();
+	
+	//grab the table
+	WebElement table = driver.findElement(By.id("rptListTbl"));
+	
+	// get all <tr> elements from the table
+	List<WebElement> Rows = table.findElements(By.tagName("tr"));
+	System.out.println(Rows.size());
+	
+	for (WebElement allrows : Rows )
+	{
+		List<WebElement> cells = allrows.findElements(By.tagName("td"));
+	
+		for (WebElement cell : cells)
+		{
+	System.out.println(cell.getText());
+	}
+	
+//	driver.switchTo().window(currentHandle);
+//	driver.close();
+//	driver.quit();
+	
+	}
+
+}
+}

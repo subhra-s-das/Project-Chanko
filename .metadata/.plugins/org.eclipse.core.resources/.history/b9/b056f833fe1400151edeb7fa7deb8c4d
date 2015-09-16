@@ -1,0 +1,46 @@
+package examples;
+
+class  Sum {
+	 
+	 int x;
+	 int y;
+	 
+
+	 void Setsum (int value1, int value2)
+
+	 {
+		 x= value1;
+		 y=value2;
+//		 System.out.println(x);
+	 }
+
+	int getSum()
+	 {
+		 return x+y;
+	 }
+ }
+
+public class JavaBasics {
+	
+	public static void main(String[] args) {
+		
+		
+new Sum();
+		//		Sum newSum = new Sum();
+//		newSum.Setsum(10, 10); // 10 , 10 are the arguments
+				//OR
+new Sum().Setsum(10, 10);
+
+		
+		
+		System.out.println(new Sum().getSum());
+		
+				//OR
+//		System.out.println(newSum.getSum());
+		
+		
+		
+	}
+
+}
+

@@ -1,0 +1,41 @@
+package example1;
+
+public class Inheritance02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+/*
+Simple inheritance example
+*/
+
+class MobilePhone
+{
+double price;
+double weight;
+String color;
+long number;
+
+public void makecall(long number)
+{
+	this.number=number;
+	System.out.println("calling ...."+number);
+}
+
+	
+}
+
+class SmartPhone
+{
+	String model;
+	String brand;
+}
+
+class OrdinaryPhone extends SmartPhone
+{
+	
+}

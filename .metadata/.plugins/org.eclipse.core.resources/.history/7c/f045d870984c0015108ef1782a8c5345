@@ -1,0 +1,42 @@
+package example1;
+
+public class Inheritance03 {
+
+	public static void main(String[] args) {
+		
+		Car c1 = new Car();
+		c1.info("Sedan");
+		
+
+	}
+
+}
+
+
+class Car
+{
+	String type;
+	String color;
+	double weight;
+	
+	public void info(String type)
+	{
+		this.type=type;
+		System.out.println(type);
+	}
+}
+
+class HyundaiCar extends Car
+{
+	String model;
+	double bhp;
+	
+	public void info(String model)
+	{
+		this.model=model;
+		System.out.println(model);
+	}
+	
+	
+	
+}

@@ -1,0 +1,44 @@
+package UserData;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class JDBCTest {
+
+	public static void main(String[] args) {
+		String user="Demo";
+		String url="jdbc:arserver://vw-pun-atm-dv18:0;mode=new";
+		String password="";
+		String sql1="SELECT  `HPD:Help Desk`.`Company`   from  `AR System Schema`.`HPD:Help Desk`";
+
+
+	
+			try {
+				Class.forName("com.bmc.arsys.jdbc.core.Driver");
+				
+				
+				Connection conn = DriverManager.getConnection(url, user, password);
+				Statement st = conn.createStatement();
+				ResultSet rs1 = st.executeQuery(sql1);
+				
+				while (rs1.next())
+				{
+					String col1 = rs1.getArray(1);
+					
+				}
+				
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+
+
+}
+}

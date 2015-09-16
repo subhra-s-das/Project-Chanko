@@ -1,0 +1,30 @@
+package example1;
+
+public class Inheritance04 {
+	public static void main (String args[])
+	{
+
+		typeCasting casting = new typeCasting();
+		casting.typecast(10);
+	
+	
+	}
+
+}
+
+class typeCasting 
+{
+	int number;
+	
+	public void typecast(int typeCastNumber)
+	{
+		number = typeCastNumber;
+		
+	System.out.println(number);
+		
+		
+	}
+	
+	
+}
+

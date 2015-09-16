@@ -1,0 +1,39 @@
+package examples;
+
+
+public class Collection {
+	public static void main(String[] args) {
+		
+		
+	}
+
+}
+/* Array implementation
+ * Implement an array within a method 
+ */
+class multiArray
+{
+	public multiArray() 
+	{
+		int SingleArray [] = new int [3]; // can be used in a constructor
+
+		SingleArray [0] = 1;
+		
+		
+	}
+	
+	int SingleArray [] = new int [3]; // can be used in a constructor
+	{
+	SingleArray [0] = 1;
+	}
+	
+	int array[]= {1,2,3,4,5};
+	
+//	OR
+//int SingleArray [] ={};
+
+}
+
+
+
+

@@ -1,0 +1,25 @@
+package example1;
+
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.filefilter.NameFileFilter;
+
+public class CommpnIO_01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		File f = new File("C:\\Test");
+
+String[] list = f.list(new NameFileFilter(".txt"));
+		for (int i=0;i<list.length;i++)
+		{
+			System.out.println(list[i]);
+		}
+		
+		
+	}
+
+}
+

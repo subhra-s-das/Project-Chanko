@@ -1,0 +1,23 @@
+package example1;
+
+public class Inheritance03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
+class Car
+{
+	String type;
+	String color;
+	double weight;
+	
+	public void typeinfo()
+	{
+		System.out.println(type);
+	}
+}

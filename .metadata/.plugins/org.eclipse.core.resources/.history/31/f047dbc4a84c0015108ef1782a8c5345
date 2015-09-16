@@ -1,0 +1,36 @@
+package example1;
+
+public class Inheritance04 {
+	public static void main (String args[])
+	{
+		
+	}
+
+}
+
+
+class Cons1
+{
+	public Cons1()
+	{
+		
+	}
+}
+
+class Cons2 extends Cons1
+{
+	public Cons2()
+	{
+		
+	}
+	
+}
+
+class Cons3 extends Cons2
+{
+	
+	public Cons3()
+	{
+		
+	}
+}

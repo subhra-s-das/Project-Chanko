@@ -1,0 +1,47 @@
+package examples;
+
+ class Sum {
+	 
+	int x;
+	int y;
+	 
+	//set method 
+	void Setsum (int value1, int value2)
+	 /*value1 and value2 are parameters which are 
+	  * present in method definition 
+	  * 
+	  */
+	 {
+		 x= value1;
+		 y=value2;
+		 System.out.println(x);
+	 }
+	 
+	 //get method
+	 int getSum()
+	 {
+		 return x+y;
+	 }
+ }
+
+public class JavaBasics {
+	
+	public static void main(String[] args) {
+		Sum newSum = new Sum();
+//		newSum.Setsum(10, 10); // 10 , 10 are the arguments
+		
+		//OR
+		
+		new Sum().Setsum(10, 10);
+
+		
+//		System.out.println(newSum.getSum());
+//		OR
+		System.out.println(new Sum().x);
+		
+		
+		
+	}
+
+}
+

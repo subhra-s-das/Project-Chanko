@@ -1,0 +1,33 @@
+package examples;
+
+public class DynamicMethodDispatch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class Animal {
+	String breed;
+	String colour;
+	int weight;
+
+	public void walk() {
+		System.out.println("Animal walk from one place to another");
+	}
+
+}
+
+
+class Dog
+{
+	String name;
+	
+	public void bark()
+	{
+		System.out.println("Dog barks really loud");
+	}
+	
+}

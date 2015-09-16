@@ -1,0 +1,53 @@
+package example1;
+
+import java.io.File;
+import java.io.FilenameFilter;
+
+
+
+
+public class CommpnIO_01 implements FilenameFilter{
+	
+	public static void main (String [] args)
+	{
+		
+		testClass t = new testClass();
+t.
+	}
+	
+
+	@Override
+	public boolean accept(File dir, String name) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
+
+}
+
+
+class testClass
+{
+
+	public void test() {
+		File f = new File("C:/Test");
+		f.list(new FilenameFilter() {
+			
+			@Override
+			public boolean accept(File f, String name) {
+				// TODO Auto-generated method stub
+				 boolean aaa = name.endsWith(".txt");
+
+				return false;
+				 
+
+				 
+				 
+			}
+		});
+		
+	}
+	}
+
+

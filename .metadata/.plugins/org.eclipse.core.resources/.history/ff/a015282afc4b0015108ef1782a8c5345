@@ -1,0 +1,40 @@
+package example1;
+
+public class InterfaceExample {
+
+	public static void main(String[] args) {
+
+Person person = new Person();
+person.printinfo("Subhra Das", "Pune");
+
+	}
+
+}
+
+
+class Person
+{
+	String name;
+	String address;
+	
+	public void printinfo(String name, String address)
+	{
+		this.name = name;
+		this.address= address;
+		
+		System.out.println("Name: "+name+'\n'+"Address: "+address);
+		
+	}
+	
+}
+
+class Boy extends Person
+{
+	
+	public void info()
+	{
+		System.out.println(this.name);;
+	}
+	
+	
+}

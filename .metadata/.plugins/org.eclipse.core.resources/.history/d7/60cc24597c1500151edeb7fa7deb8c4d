@@ -1,0 +1,89 @@
+package examples;
+
+class  Sum {
+	 
+	 static int x;
+	 static int y;
+	 
+//constructor
+	 
+	 public Sum(int value1, int value2) {
+		 x= value1;
+		 y=value2;
+//		 System.out.println(x);
+	}
+	 
+//static	 void Setsum (int value1, int value2)
+//
+//	 {
+//		 x= value1;
+//		 y=value2;
+////		 System.out.println(x);
+//	 }
+
+static	int getSum()
+	 {
+		 return x+y;
+	 }
+ }
+
+//public class JavaBasics {
+//	
+//	public static void main(String[] args) {
+//		
+//		//		Sum newSum = new Sum();
+////		newSum.Setsum(10, 10); // 10 , 10 are the arguments
+//				//OR
+//new Sum().Setsum(10, 10);
+//
+//		
+//		
+//		System.out.println(new Sum().getSum());
+//		
+//				//OR
+////		System.out.println(newSum.getSum());
+//		
+//		
+//		
+//	}
+//
+//}
+
+class Add
+{
+int a,b;
+
+//set method 
+
+void addSum (int i, int j)
+{
+	a=i;
+	b=j;
+}
+
+//get method
+
+	
+}
+
+/****************************************************************************************************
+ * 
+ * Main method
+ * 
+ * 
+ *****************************************************************************************************/
+public class JavaBasics
+{
+	public static void main(String[] args)
+	{
+		
+		Sum sum = new Sum(10, 10);
+		sum.x=10;
+		sum.y=10;
+//	Sum.Setsum(10, 10);
+int totalSum=Sum.getSum();
+System.out.println(totalSum);
+	}
+	}
+
+

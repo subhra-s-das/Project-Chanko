@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;QueryClass.java&apos; to &apos;SmartReporting/src/com.bmc.jdbcautomation.qa&apos;&#x0D;&#x0A;- Original project: &apos;SmartReporting&apos;&#x0D;&#x0A;- Destination element: &apos;SmartReporting/src/com.bmc.jdbcautomation.qa&apos;&#x0D;&#x0A;- Original element: &apos;com.bmc.jdbcautomation.qa.QueryClass.java&apos;" description="Copy compilation unit" destination="/src&lt;com.bmc.jdbcautomation.qa" element1="/src&lt;com.bmc.jdbcautomation.qa{QueryClass.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1438255183419" units="1" version="1.0"/>
+</session>

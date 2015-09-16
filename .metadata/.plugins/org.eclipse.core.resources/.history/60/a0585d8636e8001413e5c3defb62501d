@@ -1,0 +1,38 @@
+package driver;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+public class SampleJDBCTest {
+ /**
+ * @param args
+ */
+ public static void main(String[] args) {
+ try
+ {
+ // Load the database driver
+ Class.forName( "com.bmc.arsys.jdbc.core.Driver" ) ;
+ // Get a connection to the AR Server
+ Connection conn = DriverManager.getConnection
+("jdbc:arserver://vl-pun-atm-qa12:4800;user=Demo;password=bmcAdm1n;;mode=new;refreshCache=10");
+ Statement st = conn.createStatement();
+ ResultSet rs = st.executeQuery("SELECT  `HPD:Help Desk`.`Incident Number` FROM `AR System Schema`.`HPD:Help Desk`");
+
+ while (rs.next())
+	 System.out.println(rs);
+ {
+ //Iterate results here
+ }
+ }
+ catch(SQLException e)
+ {
+ e.printStackTrace();
+ }
+ catch(ClassNotFoundException e)
+ {
+ e.printStackTrace();
+ }
+
+ }
+}

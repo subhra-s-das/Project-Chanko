@@ -1,0 +1,30 @@
+package examples;
+
+public class Inheritance_Example_01 {
+
+	public static void main(String[] args) {
+		
+		Person1 person = new Person1("Test Name");
+		System.out.println(person);
+	}
+
+}
+
+
+class Person1
+{
+	String name;
+	int age;
+	
+	public Person1(String name)
+	{
+		this.name=name;
+	}
+	
+	public void printName()
+	{
+		System.out.println(name);
+	}
+	
+	
+}

@@ -1,0 +1,75 @@
+package examples;
+
+public class Inheritance_Example_01 {
+
+	public static void main(String[] args) {
+
+		Per person = new Per();
+		person.setName("Hello World!");
+		System.out.println(person.getName());
+
+		Students student = new Students();
+		student.per();
+
+	}
+
+}
+
+// SUPERCLASS
+class Per {
+	public String name;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	String address;
+	int age;
+
+	public void setaddress(String address) {
+		this.address = address;
+	}
+
+	public void setage(int age) {
+		this.age = age;
+	}
+
+	// get methods
+	public String getname() {
+		// String name = this.name;
+		return name;
+	}
+
+	public String getaddress() {
+		// String address = this.address;
+		return address;
+	}
+
+	public int getage() {
+		// int age = this.age;
+		return age;
+	}
+
+
+
+}
+
+// SUBCLASS this inherits class Per
+class Students extends Per {
+
+	public void per() {
+		String name="Hell";
+		System.out.println(super.name);
+
+	}
+
+}
+
+// SUBCLASS this inherits class Students
+class Engineer extends Students {
+
+}

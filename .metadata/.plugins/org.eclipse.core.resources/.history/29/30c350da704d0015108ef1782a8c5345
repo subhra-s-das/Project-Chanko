@@ -1,0 +1,41 @@
+package examples;
+
+public class DynamicMethodDispatch {
+
+	public static void main(String[] args) {
+
+//SuperClass| SubClass| super keyword| polymorphism | type casting | dynamic method dispatch 
+		//SuperClass Reference Variable Equals SubClass Object
+		//Super Keyword Example  Calling Superclass Constructors
+		// instance of 
+		
+		
+
+	}
+
+}
+
+class Animal {
+	String breed;
+	String colour;
+	int weight;
+
+	public void breed()
+	{
+		System.out.println(breed);
+	}
+	
+	public void walk() {
+		System.out.println("Animal walk from one place to another");
+	}
+
+}
+
+class Dog {
+	String name;
+
+	public void bark() {
+		System.out.println("Dog barks really loud");
+	}
+
+}

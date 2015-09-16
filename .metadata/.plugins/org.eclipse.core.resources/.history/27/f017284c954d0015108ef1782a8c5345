@@ -1,0 +1,29 @@
+package examples;
+
+public class DynamicMethodDispatch {
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}
+
+class Animal
+{
+	String color;
+	int weight;
+}
+
+class Dog extends Animal
+{
+	String breed;
+}
+
+class labrodor
+{
+	String name;
+	
+	
+}
+

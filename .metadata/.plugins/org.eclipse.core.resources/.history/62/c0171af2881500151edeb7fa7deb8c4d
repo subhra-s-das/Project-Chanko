@@ -1,0 +1,49 @@
+package examples;
+
+
+public class Collection {
+	public static void main(String[] args) {
+	
+	
+	}
+
+}
+
+class multiArray
+{
+int i;
+int j;
+	public multiArray() {
+		
+		int array [][] = new int [][] {	{11,12,13,99},
+										{11,22,33,99},
+										{44,55,66,99}};
+//		
+//		int array [][]={{11,12,13,99},
+//						{11,22,33,99},
+//						{44,55,66,99}};
+		
+		for (i=0;i<array.length;i++)
+		{
+			for (j=0;j<array.length;j++)
+			{
+				System.out.print(array[i][j]);
+				
+			}
+			
+			
+		}
+			
+	}
+
+	
+//int MultiArray [][]= new int[4][5];
+
+
+
+
+}
+
+
+
+

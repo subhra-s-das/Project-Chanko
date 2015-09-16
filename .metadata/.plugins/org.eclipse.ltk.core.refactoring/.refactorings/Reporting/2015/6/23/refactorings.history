@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;private static void getCellText(FirefoxDriver driver)&apos; from &apos;yf.AR_Login.main()&apos; to &apos;yf.AR_Login&apos;&#x0D;&#x0A;- Original project: &apos;Reporting&apos;&#x0D;&#x0A;- Method name: &apos;getCellText&apos;&#x0D;&#x0A;- Destination type: &apos;yf.AR_Login&apos;&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" comments="false" description="Extract method &apos;getCellText&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;yf{AR_Login.java" name="getCellText" replace="false" selection="2553 511" stamp="1433141742356" version="1.0" visibility="2"/>
+</session>

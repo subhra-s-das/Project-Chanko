@@ -1,0 +1,18 @@
+1434866931953	Extract method 'Scan'
+1434872358566	Extract method 'FileScanner'
+1434938938872	Rename type 'ReadQueryXL'
+1435313219715	Rename type 'ReadXLpoi'
+1435313569698	Delete element
+1435314799405	Extract method 'result'
+1435315421395	Introduce Parameter Object
+1435335656287	Delete element
+1435335991901	Move compilation unit
+1435336040033	Move compilation unit
+1435336061058	Move compilation unit
+1435336073931	Delete element
+1435336092609	Move compilation unit
+1435336190921	Rename type 'ExecuteQuery'
+1435336330585	Rename type 'jdbcClass'
+1435425970681	Delete element
+1435428057459	Delete element
+1435428063625	Delete element

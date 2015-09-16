@@ -1,0 +1,9 @@
+package example1;
+
+public interface MyInterface {
+	
+	String displayname(String name);
+	String displayaddress(String address);
+	int displayage(int age);
+
+}

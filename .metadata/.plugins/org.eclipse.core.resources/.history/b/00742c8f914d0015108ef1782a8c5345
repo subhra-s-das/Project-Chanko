@@ -1,0 +1,101 @@
+package examples;
+
+public class DynamicMethodDispatch {
+
+	public static void main(String[] args) {
+
+		/*
+		 * SuperClass| SubClass| super keyword| polymorphism | type casting |
+		 * dynamic method dispatch SuperClass Reference Variable Equals SubClass
+		 * Object Super Keyword Example Calling Superclass Constructors instance
+		 * of
+		 */
+
+		// Subclass object has access to all instance variables and methods of
+		// create object of subclass and access all superclass variables and methods
+		
+		
+		
+		
+		
+		//access default constructor
+		
+		
+		
+		//access parameterized constructor
+		
+		
+		
+
+	}
+
+}
+
+// this is a Superclass
+class Animal {
+	String breed;
+	String colour;
+	int weight;
+
+	// constructors are never inherited
+	// default constructor
+	public Animal() {
+		// TODO Auto-generated constructor stub
+		System.out.println("This is default constructor for super class");
+	}
+
+	// parameterized constructor | this is a overloaded constructor
+	public Animal(String breed, String colour, int weight) {
+		this.breed = breed;
+		this.colour = colour;
+		this.weight = weight;
+	}
+
+	{
+
+	}
+
+	// superclass method
+	public void breed() {
+		System.out.println(breed);
+	}
+
+	// super class method
+	public void walk() {
+		System.out.println("Animal walk from one place to another");
+	}
+
+}
+
+// This is a subclass
+class Dog {
+	String name;
+
+	// subclass method
+	public void bark() {
+		System.out.println("Dog barks really loud");
+	}
+
+}
+
+// This is a subclass
+class GermanShepard {
+	String scientificName;
+
+	// default constructor
+	public GermanShepard() {
+		System.out
+				.println("This is default constructor for subclass GermanShepard");
+	}
+
+	// parameterized constructor
+	public GermanShepard(String scientificName) {
+		this.scientificName = scientificName;
+
+	}
+
+	public void scientName() {
+		System.out.println(scientificName);
+	}
+
+}

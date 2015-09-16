@@ -1,0 +1,60 @@
+package examples;
+
+
+public class Collection {
+	public static void main(String[] args) {
+		
+		
+	}
+
+}
+/* array implementation in Java
+ * 1D array 
+ * int marks []= new int [10]
+ * here i am creating an array object
+ * this does not needs to be within a constructor and access the array index through variable marks
+ * I can create a for loop and add iterative [i] values to add to array element 
+ *  
+ *  
+ *  int marks[] = {55,66,77,88,99}
+ *  Here I am assigning array elements to array index
+ * Here already array elements are defined
+ * Here I can use for loop to iterate through array elements to get all the elements at certain indexes  
+ *  
+ *  
+ */
+
+// when there is a  you don't have to create an instance of the class to access the instance variable. You can access the variable 
+
+class multiArray
+{
+
+	public multiArray() {
+		int array [][]={{11,12,13,99},
+						{11,22,33,99},
+						{44,55,66,99}};
+		
+		for (int i=0;i<array.length;i++)
+		{
+			for (int j=0;j<array.length;j++)
+			{
+				System.out.print(array[i][j]);
+				
+			}
+			
+			
+		}
+			
+	}
+
+	
+//int MultiArray [][]= new int[4][5];
+
+
+
+
+}
+
+
+
+

@@ -1,0 +1,27 @@
+package examples;
+
+public class Recursive {
+
+	public static void main(String[] args) {
+
+TestRecussive recursive = new TestRecussive();
+recursive.forLoop(10);
+
+	}
+
+}
+
+
+class TestRecussive
+{
+	//method
+	public void forLoop(int i)
+	{
+		for (i=0;i<=10;i++)
+		{
+			System.out.println(i);
+		}
+	}
+	
+	
+}

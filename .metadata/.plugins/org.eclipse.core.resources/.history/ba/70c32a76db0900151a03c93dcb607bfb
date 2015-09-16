@@ -1,0 +1,49 @@
+package examples;
+
+/* calculate
+ * volume
+ * of 
+ * cube
+ */
+
+class CubeVolume
+{
+	int length, breadth, height;
+	
+	//method
+	int Volume (int length, int breadth, int height)
+	{
+		
+	}
+	
+	int TotalVolumen(int x, int y, int z)	// x,y and z are the parameters
+	{
+		x=length;
+		y=breadth;
+		z=height;
+				return x*y*z;
+	}
+	
+	
+}
+
+
+public class BasicTest_02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CubeVolume newVolume = new CubeVolume();
+		
+//		int Total=newVolume.TotalVolumen(10, 10, 10); // 10,10,01 are arguments
+		System.out.println(newVolume.TotalVolumen(10, 10, 10));
+
+		newVolume.breadth=20;
+		newVolume.breadth=20;
+		newVolume.height=20;
+		
+	int total = newVolume.Volume(10, 10, 10);
+		
+		
+	}
+
+}

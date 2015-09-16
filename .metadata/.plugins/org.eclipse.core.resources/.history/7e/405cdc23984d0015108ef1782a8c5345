@@ -1,0 +1,41 @@
+package examples;
+
+public class DynamicMethodDispatch {
+
+	public static void main(String[] args) {
+		
+		Labrodor lab = new Labrodor();
+		lab.breed="lab";
+		lab.color="brown";
+		lab.name="Nick";
+		lab.weight=16;
+	}
+
+	
+	
+	
+}
+
+class Animal
+{
+	String color;
+	int weight;
+	
+	public void  walk()
+	{
+		System.out.println("Animal walk");
+	}
+}
+
+class Dog extends Animal
+{
+	String breed;
+}
+
+class Labrodor extends Dog
+{
+	String name;
+	
+	
+}
+
