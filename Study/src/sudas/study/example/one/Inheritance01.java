@@ -8,7 +8,7 @@ public class Inheritance01 {
 		// creating an object of subclass Dog
 		Dog d = new Dog(); // -> The default constructor of Dog is called //
 							// here.
-		Boy b = new Boy();
+		Boy b = new Boy(null);
 	}
 
 }
@@ -28,12 +28,14 @@ class Person {
 
 	// Default constructor
 	 Person() {
+		 System.out.println("From default constructor");
 	
 	 }
 
+
 	// Argument constructor parameterized constructor
 	Person(String name) {
-
+System.out.println("From argument constructor");
 	}
 
 	Person(String name, int age) {
@@ -43,8 +45,9 @@ class Person {
 }
 
 class Boy extends Person {
-	public Boy(){
-super();
+	public Boy(String name){
+		super(name);
+
 	}
 }
 
