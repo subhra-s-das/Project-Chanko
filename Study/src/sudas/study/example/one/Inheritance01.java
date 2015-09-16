@@ -12,18 +12,19 @@ public class Inheritance01 {
 }
 
 // Constructors are not inherited like instance variable and methods
-// in inheritance, rather they need to be called
-// In the below class person I have three constructors
-// The default constructor is Person(),
+// rather they need to be called
+// In the below class person I have three constructors for PErson class
+// The default constructor is Person(), if the default constructor is commented out the subclass Boy gives and
+//error "Implicit super constructor Person() is undefined for default constructor. Must define an explicit constructor"
 
 class Person {
 	String name;
 	int age;
 
 	// Default constructor
-	Person() {
-
-	}
+//	Person() {
+//
+//	}
 
 	// Argument constructor parameterized constructor
 	Person(String name) {
