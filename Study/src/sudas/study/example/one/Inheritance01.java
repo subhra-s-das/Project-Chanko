@@ -10,7 +10,7 @@ public class Inheritance01 {
 	}
 
 }
-
+// for github
 // Constructors are not inherited like instance variable and methods
 // rather they need to be called
 // In the below class person I have three constructors for PErson class
