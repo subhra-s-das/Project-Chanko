@@ -1,4 +1,4 @@
-package sudas.study.example.one;
+package CollectionFramework;
 
 public class ArrayList {
 
