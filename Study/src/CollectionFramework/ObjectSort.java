@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class ObjectSort {
-
+// Git sync
 	public static void main(String[] args) {
 		// Comparable and Comparator interfaces
 		new ObjectSort().comparable();

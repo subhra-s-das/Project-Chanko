@@ -1,7 +1,7 @@
 package CollectionFramework;
 
 import java.util.List;
-
+//Git sync
 public class OFruit implements Comparable<OFruit> {
 	String name;
 	String colour;
