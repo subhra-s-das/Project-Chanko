@@ -1,5 +1,4 @@
 package CollectionFramework;
-
 import java.util.List;
 
 public class OFruit implements Comparable<OFruit> {
