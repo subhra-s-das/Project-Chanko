@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
+
 public class AllInterfaces {
 
 	public static void main(String[] args) {
@@ -12,8 +13,7 @@ public class AllInterfaces {
 	}
 
 	public void ArraySort() {
-		String sampleArray1[] = { "Yahoo", "Facebook", "Adobe", "Microsoft",
-				"Sun", "Apache" };
+		String sampleArray1[] = { "Yahoo", "Facebook", "Adobe", "Microsoft", "Sun", "Apache" };
 
 		Arrays.sort(sampleArray1);
 
@@ -21,10 +21,9 @@ public class AllInterfaces {
 			System.out.println(sampleArray1[i]);
 		}
 	}
-	
-	public void ArrayListSort()
-	{
-		
+
+	public void ArrayListSort() {
+
 	}
 
 }

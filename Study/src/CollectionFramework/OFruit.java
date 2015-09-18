@@ -1,5 +1,4 @@
 package CollectionFramework;
-import java.util.List;
 
 public class OFruit implements Comparable<OFruit> {
 	String name;
@@ -30,15 +29,11 @@ public class OFruit implements Comparable<OFruit> {
 		this.quantity = quantity;
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
 
 	@Override
 	public int compareTo(OFruit fruit) {
-	return this.name.compareTo(fruit.getName());
-		
+		return this.name.compareTo(fruit.getName());
+
 	}
 
 }

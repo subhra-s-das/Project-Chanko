@@ -3,6 +3,7 @@ package CollectionFramework;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
 public class ObjectSort {
 
 	public static void main(String[] args) {
@@ -26,15 +27,21 @@ public class ObjectSort {
 		fruit3.setName("Orange");
 		fruit3.setColour("Yellow");
 		fruit3.setQuantity(20);
+		
+		OFruit fruit4 = new OFruit();
+		fruit4.setName("StarFruit");
+		fruit4.setColour("Green");
+		fruit4.setQuantity(2);
+
 
 		List<OFruit> list = new ArrayList<OFruit>();
 		list.add(fruit1);
 		list.add(fruit2);
 		list.add(fruit3);
+		list.add(fruit4);
 
 		// Collections.shuffle(list);
 		Collections.sort(list);
-
 
 		for (int i = 0; i < list.size(); i++) {
 			System.out
