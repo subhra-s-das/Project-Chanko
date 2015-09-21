@@ -34,7 +34,7 @@ public class ComparatorExample1 {
 	public static void main(String[] args) {
 
 		
-		Animals animal1 = new Animals("<, size)
+		
 	}
 
 }
