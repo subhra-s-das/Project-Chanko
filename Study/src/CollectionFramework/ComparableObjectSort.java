@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class ObjectSort {
+public class ComparableObjectSort {
 
 	public static void main(String[] args) {
 		// Comparable and Comparator interfaces
-		new ObjectSort().comparable();
+		new ComparableObjectSort().comparable();
 	}
 
 	public void comparable() {

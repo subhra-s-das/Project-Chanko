@@ -1,4 +1,5 @@
 package com.bmc.artestdata.qa;
+
 /*
 Author: Subhra S. Das
 */
@@ -34,22 +35,19 @@ class ComList {
 	public void CreateCompanies() {
 		String entrtID;
 		// create a ARServerUser object
-		ARServerUser user = new ARServerUser("Demo", "bmcAdm1n", "en",
-				"vl-pun-atm-qa12", 0);
+		ARServerUser user = new ARServerUser("Demo", "bmcAdm1n", "en", "vl-pun-atm-qa12", 0);
 
 		try {
 			// get listEntry
-			List<EntryListInfo> entList = user.getListEntry(formName, null, 0,
-					300, null, null, false, null);
+			List<EntryListInfo> entList = user.getListEntry(formName, null, 0, 300, null, null, false, null);
 
 			Iterator<EntryListInfo> itr = entList.iterator();
-			
-			//write to file
+
+			// write to file
 			File file = new File("c:/Test/arsystem.txt");
-			BufferedOutputStream out = new BufferedOutputStream(
-					new FileOutputStream(file));
-			
-			//find the entry ID
+			BufferedOutputStream out = new BufferedOutputStream(new FileOutputStream(file));
+
+			// find the entry ID
 			while (itr.hasNext()) {
 				entrtID = (itr.next()).getEntryID();
 				// System.out.println(entrtID);
@@ -57,7 +55,8 @@ class ComList {
 				out.write(entrtID.getBytes());
 				out.write("\n".getBytes());
 
-				//get the entry object for every entry ID | get the value object for field ID | get the value from value object
+				// get the entry object for every entry ID | get the value
+				// object for field ID | get the value from value object
 				Entry entry = user.getEntry(formName, entrtID, null);
 				Value v = entry.get(fieldId);
 				String companyName = v.toString();
