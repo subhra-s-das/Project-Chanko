@@ -10,6 +10,7 @@ public class DateExample {
 	public static void main(String[] args) {
 		ChangeDate dateuse = new ChangeDate();
 		dateuse.EpochToDateTime();
+//		dateuse.dateTimeToEpoch();
 
 	}
 
@@ -23,11 +24,18 @@ class ChangeDate {
 		System.out.println(formatDate);
 	}
 	
-	public void dateTimeToEpoch()
-	{
-		String dateTime="21/09/2015 08:10:00";
-		SimpleDateFormat format = new SimpleDateFormat("dateTime");
-		
-	}
+//	public void dateTimeToEpoch()
+//	{
+//		String dateTime="21/09/2015 08:10:00";
+//		SimpleDateFormat format = new SimpleDateFormat("dateTime");
+//try {
+//	Date epoch = format.parse(dateTime);
+//	System.out.println();
+//	
+//} catch (ParseException e) {
+//	// TODO Auto-generated catch block
+//	e.printStackTrace();
+//}
+//	}
 }
 
