@@ -1,4 +1,4 @@
-package sudas.study.example.one;
+package FileSystem;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

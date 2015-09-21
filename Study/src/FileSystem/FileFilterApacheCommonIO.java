@@ -10,14 +10,14 @@ public class FileFilterApacheCommonIO {
 
 	public static void main(String[] args) {
 
-		FileFilter F = new FileFilter();
+		FileFilter1 F = new FileFilter1();
 		F.filter();
 
 	}
 
 }
 
-class FileFilter {
+class FileFilter1 {
 	public void filter() {
 		String path = "C:/Test";
 		File f = new File(path);
